@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     }
     
     func setMemoData() {
+        postMemoData(memoData: "Sample memo", date: Date())
         for i in 1...5 {
             let memoDataModel = MemoDataModel(test: "このメモは\(i)番目のメモです", recordDate: Date())
             memoDataList.append(memoDataModel)
